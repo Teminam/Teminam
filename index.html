@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuzy's Portfolio</title>
+    <meta name="auther" content="Teminam">
+    <meta name="description" content="세계에서 짱먹는 개발자">
+    <link rel="icon" type="image/png" href="./images/tennis.png">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/133260cff9.js"></script>
+</head>
+<body>
+    <!-- Navbar 시작 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-brands fa-connectdevelop"></i>
+            <a href="#">Teminam</a>
+        </div>
+        <ul class="navbar__menu"  id="navbar__menu">
+            <li class="navbar__menu__item active" onclick="goToScroll('home')">홈</li>
+            <li class="navbar__menu__item" onclick="goToScroll('about')">내 소개</li>
+            <li class="navbar__menu__item" onclick="goToScroll('skills')">기술</li>
+            <li class="navbar__menu__item" onclick="goToScroll('work')">내 작업실</li>
+            <li class="navbar__menu__item" onclick="goToScroll('testimonials')">추천서</li>
+            <li class="navbar__menu__item" onclick="goToScroll('contact')">연락주세요</li>
+        </ul>
+        
+        <!-- 버튼 시작 -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-burger"></i>
+        </button>
+    </nav>
+    <!-- Navbar 끝 -->
+    <!-- 홈 시작 -->
+    <section id="home">
+        <div class="home__container">
+            <img src="./images/조코비치.jpg" alt="조코비치's Photo" class="home__avatar">
+            <h1 class="home__title">안녕하세요! 저는 조코비치입니다!</h1>
+            <h2 class="home__description">세르비아 테니스메트로에 거주합니다. 세계 랭킹1위의 테니스 선수입니다.</h2>
+            <button class="home__contact">연락주세요!</button>
+        </div>
+    </section>
+    <!-- 홈 끝 -->
+    <!-- 내소개 시작 -->
+    <section id="about" class="section section__container">
+        <h1>내 소개</h1>
+        <p>
+            ATP 현 세계 랭킹 1위이며, 그랜드 슬램 대회 남자 단식에서 22차례 우승(오스트레일리아 오픈 9회, 프랑스 오픈 2회, 윔블던 선수권 7회, US 오픈 3회)을 거머쥐었습니다. '무결점의 사나이'라고 불리웁니다. 
+            2008년 오스트레일리아 오픈에서 당시 세계 랭킹 1위였던 로저 페더러를 준결승에서 꺾고, 결승에서는 프랑스의 신예 조윌프리드 총가를 누르면서 생애 첫 그랜드 슬램 타이틀을 따냈습니다.
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h2 class="major__title">프론트엔드</h2>
+                <div class="major__description">
+                    HTML, CSS, JavaScript, TypeScript, React
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h2 class="major__title">백엔드</h2>
+                <div class="major__description">
+                    Python, Node.js, Django
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h2 class="major__title">인공지능</h2>
+                <div class="major__description">
+                    데이터분석, 머신러닝, 딥러닝, Tensorflow, Pytorch
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="./images/us-open.png" alt="US-OPEN" class="about__jobs__icon">
+                <div class="job__description">
+                    <p class="job__name">
+                        US-OPEN 우승 3회
+                    </p>
+                    <p class="job__period">
+                        2XXX. XX ~ 2XXX. XX
+                    </p>
+                </div>
+            </div>
+
+            <div class="job">
+                <img src="./images/롤랑가로스.png" alt="롤랑가로스" class="about__jobs__icon">
+                <div class="job__description">
+                    <p class="job__name">
+                        Roland Garros 우승 
+                    </p>
+                    <p class="job__period">
+                        2XXX. XX ~ 2XXX. XX
+                    </p>
+                </div>
+            </div>
+
+            <div class="job">
+                <img src="./images/australian_open.png" alt="호주오픈" class="about__jobs__icon">
+                <div class="job__description">
+                    <p class="job__name">
+                        Australian-Open 우승
+                    </p>
+                    <p class="job__period">
+                        2XXX. XX ~ 2XXX. XX
+                    </p>
+                </div>
+            </div>
+
+            <div class="job">
+                <img src="./images/wimbledom.png" alt="윔블던" class="about__jobs__icon">
+                <div class="job__description">
+                    <p class="job__name">
+                        Wimbledon-Open 우승
+                    </p>
+                    <p class="job__period">
+                        2XXX. XX ~ 2XXX. XX
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 내소개 끝 -->
+    <!-- 기술 시작 -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>기술</h1>
+            <h2>소개</h2>
+            <p>저는 20년차 엔지니어로 프론트엔드부터 백엔드, AI에 이르기까지 설계부터 배포, 운영까지 많은 경험을 가지고 있습니다. 새로운 기술과 트렌드를 익히는 것을 좋아하고 팀과 협업하여 작업하는 것을 즐기고 있습니다.</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Language</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>DBMS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Python</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 100%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>데이터분석</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>머신러닝/딥러닝</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>colaboratory</span></li>
+                            <li><span>Pycham</span></li>
+                            <li><span>Jupyter notebook</span></li>
+                            <li><span>Github Desktop</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">ETC</h3>
+                        <ul class="etc__list">
+                            <li><span>Math</span></li>
+                            <li><span>Music</span></li>
+                            <li><span>Run</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 기술 끝 -->
+    <!-- 프로젝트 시작 -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>내 작업실</h1>
+            <h2>프로젝트</h2>
+            <div class="work__categories">
+                <button class="category__btn selected">
+                    전체 <span class="category__count">10</span>
+                </button>
+                <button class="category__btn">
+                    프론트엔드 <span class="category__count">2</span>
+                </button>
+                <button class="category__btn">
+                    백엔드 <span class="category__count">3</span>
+                </button>
+                <button class="category__btn">
+                    인공지능 <span class="category__count">5</span>
+                </button>
+            </div>
+            <div class="work__projects">
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 클론코딩</h3>
+                        <span>유튜브와 너무 똑같아서 헤깔림</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg"  alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>에어비엔비 클론코딩</h3>
+                        <span>여기에서 예약할뻔</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg"  alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>여기어때 클론코딩</h3>
+                        <span>여기어때 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>마켓컬리 클론코딩</h3>
+                        <span>마켓컬리 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>트리플 클론코딩</h3>
+                        <span>트리플 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 데이터분석</h3>
+                        <span>유튜브 광고에 대한 데이터 분석</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 크롤링</h3>
+                        <span>유튜브 영상 주소 및 제목 크롤링</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>자연어 처리 챗봇</h3>
+                        <span>사람인줄 알았음</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>캠을 통한 얼굴인식</h3>
+                        <span>인식이 너무 잘됨</span>
+                    </div>
+                </a>
+                <a href="#" class="project" target="_blank">
+                    <img src="./images/캡쳐본.jpg" alt="유튜브메인" class="project__img">
+                    <div class="project__description">
+                        <h3>캠을 통한 아바타 만들기</h3>
+                        <span>정말 똑같이 만들어 사진인줄</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- 프로젝트 끝 -->
+    <!-- 추천서 시작 -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Comment</h1>
+            <h3>조코비치에 대한 의견</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="./images/이바니세비치.jpg" alt="조코비치 코치" class="testimonial__avatar1">
+                    <div class="testimonial__speech-bubble">
+                        <p>그에게 항상 배운다. 그는 점점 더 테니스에 빠져들고 있다. 그 빠져드는 깊이는 끝이 없다.
+                            노박은 믿을 수 없다. 어떻게 해야할지 모르겠다. 다 아는 줄 알았는데 새로운 것을 보게 된다. 아마 난 또다른 뭔가를 보게 될 것이다. 나는 그가 코트에서 아주 감정적이라는 것을 안다. 우리도 말하고 그도 말한다. 그가 어떻게 토너먼트에서 우승했는지, 그가 오늘 경기에서 어떻게 뛰었는지 어떤 때는 좋다가 어떤 때는 나빴다. 전체적으로 그는 호주에서 10번 우승했다. 스페인과 세르비아의 전투는 핸드볼 경기와 같다.</p>
+                        <p class="name"><a href="#">조코비치코치</a> / Coach</p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="./images/페더러.jpg" alt="페더러" class="testimonial__avatar2">
+                    <div class="testimonial__speech-bubble">
+                        <p>토미 폴과의 준결승 경기때 조코비치는 아주 감정적이었다.  두세트 모두 5-1, 5-1로 앞서고 6-1로 이겼다. 5대 5로 가지 않았다. 그때는 그가 누구와 경기하든 그런 스코어가 났을 것이다. 이 모든 광기에도 불구하고 토너먼트에서 우승했다. 믿을 수 없는 성과다.</p>
+                        <p class="name"><a href="#">Mr.ChatGPT</a> / OpenAI</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 추천서 끝 -->
+    <!-- 연락주세요 시작 -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">연락주세요</h1>
+        <h2 class="contact__email">Teminam@kau.kr</h2>
+        <div class="contact__links">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2023 Ryuzy - All rights reserved
+        </p>
+    </section>
+    <!-- 연락주세요 끝 -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+        
+    </button>
+</body>
+</html>
